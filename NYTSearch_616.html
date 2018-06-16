@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York Times Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title" style="background-color:hsl(220, 100%, 20%); height:140px">
+            <h1 class="text-light" style="padding: 40px; text-align: center">
+                <i class="fas fa-newspaper" style="margin-right: 5px;"></i>New York Times Search
+            </h1>
+        </div>
+        <div class="contentBody" style="padding-top: 30px">
+            <div class="border" id="searchParam" style="background-color:rgb(217, 217, 217); padding:4px">
+                <h5 class="" style="position:relative; left:2%; top:4px">
+                    <i class="fas fa-clipboard-list" style="margin-right: 5px"></i>Search Parameters
+                </h5>
+            </div>
+            <div class="border" id="searchBody" style="margin-bottom: 30px">
+                <div id="inputs" style="padding: 15px;">
+                    <div class="form-group">
+                        <label for="usr">Search Term:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Number of Records to Retrieve:</label>
+                        <select class="form-control" id="recordNumber">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-search" style="margin-right: 5px;"></i>Search
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                        <i class="fas fa-trash-alt" style="margin-right: 5px;"></i>Clear Results
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="border" id="articles">
+            <div id="topArticles" style="background-color: rgb(217, 217, 217); padding: 4px" >
+                <h6 style="position: relative; top: 2px; left: 15px;">
+                    <i class="fas fa-archive" style="margin-right: 5px"></i>Top Articles
+                </h6>
+            </div>
+            <div id="articleContent">
+                <div class="container">
+                    <h6 style="padding: 30px">CALL MONEY 7 PER CENT: Highest Rate Since December, 1903</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="nytmpz.js"></script>
+
+</body>
+</html>
